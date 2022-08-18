@@ -1,7 +1,9 @@
 <?php
 
 // Remove the standard zoom functionality on product image hover on the 
-// single product page. Wordpress / Woocommerce only.
+// single product page. Also disables lightbox on product image click. In
+// other words,, the product image won't do anything when you hover over
+// it or click on it. Wordpress / Woocommerce only.
 
 function remove_image_zoom_support() {
     remove_theme_support( 'wc-product-gallery-zoom' );
