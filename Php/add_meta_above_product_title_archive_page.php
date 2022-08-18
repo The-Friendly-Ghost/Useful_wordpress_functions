@@ -8,9 +8,9 @@ function add_meta_above_title() {
 	global $product;
 
 	// replace the custom field name with your own
-	$wijnsoort = get_post_meta( $product->id, '[META_FIELD_ID]', true );		
+	$my_variable = get_post_meta( $product->id, '[META_FIELD_ID]', true );		
 	
-	echo '<div class="product-meta-boven-titel">' . ucwords( $wijnsoort ) . '</div>';
+	echo '<div class="product-meta-boven-titel">' . ucwords( $my_variable ) . '</div>';
 }
 
 ?>

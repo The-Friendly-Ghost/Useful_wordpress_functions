@@ -10,7 +10,7 @@ add_filter( 'woocommerce_loop_add_to_cart_link', 'my_out_of_stock_button' );
 function my_out_of_stock_button( $args ){
   global $product;
   if( $product && !$product->is_in_stock() ){
-	  return '<a class="inactive-add-to-cart-button">+ Fles</a>';
+	  return '<a class="inactive-add-to-cart-button">[YOUR-TEXT]</a>';
   }
   return $args;
 }
